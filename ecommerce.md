@@ -347,3 +347,31 @@
         app/Http/Controllers/User/ProductListController.php
         resources/js/Pages/User/ProductList.vue
         resources/js/Pages/User/components/
+
+# CHECKOUT  WITH STRIPE PAYMENT 
+        https://www.fakexy.com/
+        https://dashboard.stripe.com/test/apikeys
+        https://stripe.com/gb/payments/checkout
+        https://docs.stripe.com/development/quickstart?lang=php&locale=en-GB
+        https://docs.stripe.com/payments/accept-a-payment?locale=en-GB
+        composer require stripe/stripe-php
+        composer require stripe/stripe-php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

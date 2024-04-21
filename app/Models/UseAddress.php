@@ -4,13 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class UseAddress extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'id',
         'user_id',
         'address1',
         'address2',
@@ -18,7 +18,13 @@ class UseAddress extends Model
         'zipcode',
         'city',
         'province',
+        'country_code',
         'country',
         'ismain'
     ];
+
+    public function user() : BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 }
